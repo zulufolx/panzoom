@@ -55,6 +55,10 @@
         if (!dragged) zoom(evt.shiftKey ? -1 : 1 );
     },false);
 
+    canvas.addEventListener('gestureend', function(evt) {
+      debugger;
+    });
+    
     var scaleFactor = 1.1;
 
     var zoom = function(clicks){
